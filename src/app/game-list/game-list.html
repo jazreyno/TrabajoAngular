@@ -1,0 +1,31 @@
+<div class="container">
+    <h2>Juegos disponibles</h2>
+</div>
+<div class="container">
+        <tbody>
+            @for (game of games; track game) {
+                <tr>
+                    <td><img class="gameImage" [src]="game.imageurl " [alt]="game.title"></td>
+                    <td class=>{{ game.id }}</td>
+                    <td class="gamename">{{ game.title }}</td>
+                    <td>{{ game.description }}</td>
+                    <td>{{ game.price | currency }}</td>
+                        @if (game.stock > 0 && game.quantity != game.stock) {
+                            <td>{{game.stock - game.quantity}}</td>
+                        } @else {
+                           <td><span class="badge bg-danger">Agotado</span></td>
+                        }
+                        @if(game.stock){
+                            <app-input-integer-component [(quantity)]="game.quantity" [max]="game.stock"></app-input-integer-component>
+                        }
+                    <td>
+                        <button class="btn btn-primary" (click)="addToCart(game)">Añadir al carrito</button>
+                    </td>
+                </tr>
+            } @empty {
+                <tr>
+                    <td colspan="7" class="text-center">No hay juegos disponibles</td>
+                </tr>
+            }
+      </tbody>
+</div>

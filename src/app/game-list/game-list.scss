@@ -1,0 +1,22 @@
+th, td {
+    padding: 10px;
+}
+
+td.gamename{
+    width: 200px; 
+    font-weight: bold;
+}
+
+td img.gameImage {
+    display: block; 
+    width: 100px; 
+    height: auto;
+}
+
+.containers{
+    margin-bottom: 100px;
+}
+
+.container{
+    margin-top: 20px;
+}

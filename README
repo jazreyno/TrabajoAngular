@@ -1,0 +1,11 @@
+Elegí hacer una página de venta de videojuegos. 
+Los datos de los juegos los traigo desde MockAPI y se muestran en la página
+Se pueden agregar al carrito en la cantidad que uno quiera, también se pueden eliminar. 
+Si se quiere agregar más de los que hay disponibles, aparece un aviso diciendo que se agotó.
+
+Datos del estudiante
+nombre:jazmin 
+apellido:reynoso
+dni:45036388
+email:reynosojazmin336@gmail.com
+sede:tandil

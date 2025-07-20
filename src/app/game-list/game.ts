@@ -4,7 +4,6 @@ export interface Game {
     description: string;
     price: number;
     imageurl: string;
-    releaseDate: string;
     genre: string;
     stock: number;
     stockinicial: number;

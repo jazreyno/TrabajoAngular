@@ -2,7 +2,7 @@ th, td {
     padding: 10px;
 }
 
-td.gamename{
+.gamename{
     width: 200px; 
     font-weight: bold;
 }
@@ -16,7 +16,17 @@ td img.gameImage {
 .containers{
     margin-bottom: 100px;
 }
-
 .container{
     margin-top: 20px;
+}
+.input-cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: white;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 80px; /* Ajustá según necesidad */
+  justify-content: center;
 }

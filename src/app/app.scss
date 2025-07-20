@@ -10,3 +10,16 @@ footer {
   bottom: 0;
   width: 100%;
 }
+.custom-header {
+  background-color: #fbc8c4 !important;
+}
+
+/* Opcional: mejorar visibilidad de los links */
+.custom-header .nav-link {
+  color: black !important;
+  font-weight: 500;
+}
+
+.custom-header .nav-link:hover {
+  color: #444 !important;
+}
